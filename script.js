@@ -24,7 +24,7 @@ async function getSupportedCurrencies(){
  */
 async function getConvertedValue(){
     let fromCurrency = document.getElementById("fromCurrency").value;
-    let toCurrency = document.getElementById("fromCurrency").value;
+    let toCurrency = document.getElementById("toCurrency").value;
     let fromCurrencyAmount = document.getElementById("fromCurrencyAmount").value;
 
     let response = await fetch(APIUrl + APIKey + "/pair/" + fromCurrency + "/" + toCurrency + "/" + fromCurrencyAmount);
